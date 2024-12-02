@@ -1,0 +1,1038 @@
+{
+    "key": "group_598d5bca6dda6",
+    "title": "Firmendaten",
+    "fields": [
+        {
+            "key": "field_598d75e8b22e6",
+            "label": "Schema Type",
+            "name": "schema_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Organisation": "Organisation",
+                "Store": "Store",
+                "LocalBusiness": "Local Business",
+                "Person": "Person",
+                "Restaurant": "Restaurant"
+            },
+            "default_value": "LocalBusiness",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d553001f66cd",
+            "label": "priceRange",
+            "name": "schema_priceRange",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "€",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d31c6e77eee9",
+            "label": "Firma",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_5d31c6fa7eeea",
+            "label": "Name",
+            "name": "company_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d7fa71140871",
+            "label": "Slug",
+            "name": "slug",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d31c70a7eeeb",
+            "label": "Beschreibung",
+            "name": "company_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_598d6f037a92f",
+            "label": "Schema: Logo",
+            "name": "company_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Resolution max: 112x112",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598d75e8b22e6",
+                        "operator": "!=",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 112,
+            "max_height": 112,
+            "max_size": "",
+            "mime_types": "jpg, png"
+        },
+        {
+            "key": "field_598db0fa1cef7",
+            "label": "Schema: Photo of Building 1x1",
+            "name": "company_image_1x1",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598d75e8b22e6",
+                        "operator": "!=",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg, png"
+        },
+        {
+            "key": "field_5d551538b7558",
+            "label": "Schema: Photo of Building 4x3",
+            "name": "company_image_4x3",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598d75e8b22e6",
+                        "operator": "!=",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg, png"
+        },
+        {
+            "key": "field_5d551547b7559",
+            "label": "Schema: Photo of Building 16x9",
+            "name": "company_image_16x9",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598d75e8b22e6",
+                        "operator": "!=",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg, png"
+        },
+        {
+            "key": "field_598d5fe753374",
+            "label": "Adresse",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_598d5bfc3cc2a",
+            "label": "Street",
+            "name": "address_street",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598d5c233cc2b",
+            "label": "Postal Code",
+            "name": "address_postal",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_598d5c933cc2c",
+            "label": "City",
+            "name": "address_locality",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_598d5caa3cc2d",
+            "label": "Region",
+            "name": "address_region",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_598d793f20d4a",
+            "label": "Country",
+            "name": "address_country",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5d31c75728ed9",
+            "label": "Geo latitude",
+            "name": "geo_latitude",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "50.7223271",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5d31c77928eda",
+            "label": "Geo longitude",
+            "name": "geo_longitude",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "7.0860232",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_598d600553375",
+            "label": "Öffnungszeiten",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598d75e8b22e6",
+                        "operator": "!=",
+                        "value": "Organisation"
+                    },
+                    {
+                        "field": "field_598d75e8b22e6",
+                        "operator": "!=",
+                        "value": "Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_598d63d35337c",
+            "label": "Opening Hours",
+            "name": "opening_hours",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Open all day: 00:00 - 23:59",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_598d63f15337d",
+            "min": 0,
+            "max": 7,
+            "layout": "table",
+            "button_label": "Add Day",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_598d63f15337d",
+                    "label": "Days",
+                    "name": "days",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "choices": {
+                        "Mo": "Mo",
+                        "Di": "Di",
+                        "Mi": "Mi",
+                        "Do": "Do",
+                        "Fr": "Fr",
+                        "Sa": "Sa",
+                        "So": "So"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 1,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "acfe_validate": "",
+                    "acfe_update": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_598d63d35337c"
+                },
+                {
+                    "key": "field_598d64205337e",
+                    "label": "from",
+                    "name": "from",
+                    "aria-label": "",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598d96b160bcc",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "H:i",
+                    "return_format": "H:i",
+                    "parent_repeater": "field_598d63d35337c"
+                },
+                {
+                    "key": "field_598d64bd59579",
+                    "label": "to",
+                    "name": "to",
+                    "aria-label": "",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598d96b160bcc",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "H:i",
+                    "return_format": "H:i",
+                    "parent_repeater": "field_598d63d35337c"
+                },
+                {
+                    "key": "field_598d96b160bcc",
+                    "label": "Closed",
+                    "name": "closed",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_598d63d35337c"
+                }
+            ]
+        },
+        {
+            "key": "field_598d6692d5ea5",
+            "label": "Special Days",
+            "name": "special_days",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Date",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_598d6692d5ea7",
+                    "label": "Date: from",
+                    "name": "date_from",
+                    "aria-label": "",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d.m.Y",
+                    "return_format": "Y-m-d",
+                    "first_day": 1,
+                    "parent_repeater": "field_598d6692d5ea5"
+                },
+                {
+                    "key": "field_598d9b07ccb41",
+                    "label": "Date: to",
+                    "name": "date_to",
+                    "aria-label": "",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d.m.Y",
+                    "return_format": "Y-m-d",
+                    "first_day": 1,
+                    "parent_repeater": "field_598d6692d5ea5"
+                },
+                {
+                    "key": "field_598d9b14ccb42",
+                    "label": "Time: from",
+                    "name": "time_from",
+                    "aria-label": "",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598d9b53ccb43",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "H:i",
+                    "return_format": "H:i",
+                    "parent_repeater": "field_598d6692d5ea5"
+                },
+                {
+                    "key": "field_598d6692d5ea8",
+                    "label": "Time: to",
+                    "name": "time_to",
+                    "aria-label": "",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598d9b53ccb43",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "H:i",
+                    "return_format": "H:i",
+                    "parent_repeater": "field_598d6692d5ea5"
+                },
+                {
+                    "key": "field_598d9b53ccb43",
+                    "label": "Closed",
+                    "name": "closed",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "Ja",
+                    "ui_off_text": "Nein",
+                    "parent_repeater": "field_598d6692d5ea5"
+                }
+            ]
+        },
+        {
+            "key": "field_598d6cb0f5324",
+            "label": "Kontakt",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_598da40b04a1e",
+            "label": "Phone",
+            "name": "company_phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "+49",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d31c6a01b8c2",
+            "label": "E-Mail-Adresse",
+            "name": "e_mail_adresse",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5d31c8334059b",
+            "label": "Telefon",
+            "name": "company_telefon",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "+49",
+            "append": ""
+        },
+        {
+            "key": "field_5d31c8484059c",
+            "label": "Telefax",
+            "name": "company_telefax",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "+49",
+            "append": ""
+        },
+        {
+            "key": "field_598d6c63f5323",
+            "label": "Contact",
+            "name": "contact",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_598d6ce7f5325",
+            "button_label": "Add Contact",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_598d6ce7f5325",
+                    "label": "Type",
+                    "name": "type",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "customer support": "customer support",
+                        "technical support": "technical support",
+                        "billing support": "billing support",
+                        "bill payment": "bill payment",
+                        "sales": "sales",
+                        "reservations": "reservations",
+                        "credit card support": "credit card support",
+                        "emergency": "emergency",
+                        "baggage tracking": "baggage tracking",
+                        "roadside assistance": "roadside assistance",
+                        "package tracking": "package tracking"
+                    },
+                    "default_value": "customer support",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": "",
+                    "parent_repeater": "field_598d6c63f5323"
+                },
+                {
+                    "key": "field_598d6e4df5326",
+                    "label": "Phone",
+                    "name": "phone",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "+49",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_598d6c63f5323"
+                },
+                {
+                    "key": "field_598d7d73f5e83",
+                    "label": "Option",
+                    "name": "option",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "HearingImpairedSupported": "Hearing Impaired Supported",
+                        "TollFree": "Toll Free"
+                    },
+                    "default_value": [],
+                    "allow_null": 1,
+                    "multiple": 1,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": "",
+                    "parent_repeater": "field_598d6c63f5323"
+                }
+            ]
+        },
+        {
+            "key": "field_598d71b57a930",
+            "label": "Social Media",
+            "name": "social_media",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_598d71d57a931",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add URL",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_598d71d57a931",
+                    "label": "URL",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_598d71b57a930"
+                }
+            ]
+        },
+        {
+            "key": "field_673225153af42",
+            "label": "Ansprechperson",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_67322523737d6",
+            "label": "Person",
+            "name": "person",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "team"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 1,
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-firmendaten"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1731339579
+}
